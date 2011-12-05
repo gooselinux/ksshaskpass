@@ -1,0 +1,21 @@
+diff -up ksshaskpass-0.5.1/src/ksshaskpass.desktop~ ksshaskpass-0.5.1/src/ksshaskpass.desktop
+--- ksshaskpass-0.5.1/src/ksshaskpass.desktop~	2008-11-25 23:46:22.000000000 +0200
++++ ksshaskpass-0.5.1/src/ksshaskpass.desktop	2009-03-29 23:47:20.000000000 +0300
+@@ -1,12 +1,12 @@
+ [Desktop Entry]
+ Version=1.0
+-Encoding=UTF-8
+-Name=SSH AskPass
+-GenericName=ssh-add
+-Comment=Enter passphrase to authenticate to the ssh agent
++Name=Ksshaskpass
++GenericName=SSH agent identity adder
++Comment=Add identities to the SSH authentication agent
+ Exec=/usr/bin/ssh-add
+ TryExec=ssh-add
+ Terminal=false
+ Type=Application
+-Icon=ssh-askpass-gnome
++Icon=dialog-password
+ Categories=Network;Security;
++OnlyShowIn=KDE

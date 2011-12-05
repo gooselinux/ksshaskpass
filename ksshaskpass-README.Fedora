@@ -1,0 +1,18 @@
+KSSHAskpass
+-----------
+
+This is a KWallet-enabled ssh-askpass application.
+It allows you to add identities to the ssh-agent
+while storing the passphrases in KWallet.
+
+To enable it, just create a script like this:
+--------------------------------
+#!/bin/sh
+SSH_ASKPASS=/usr/bin/ksshaskpass
+export SSH_ASKPASS
+exec ssh-add
+--------------------------------
+put it in ~/.kde/Autostart/ and make it executable.
+
+Next time you login, ssh-add will use ksshaskpass
+as a password entry front-end.
